@@ -1,4 +1,4 @@
-
+/* exercise 5-3.c  */
 
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -11,7 +11,7 @@ int main (int argc, char *argv[])
 
   printf ("Hello world\n");
 
-    for (ap = 1; ap < argc; ap++) {
+  for (ap = 1; ap < argc; ap++) {
     if (argv[ap][0] == 'x') {
       apnd_flag = 1;
       break;

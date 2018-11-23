@@ -17,8 +17,8 @@ int my_dup2 (int old_fd, int new_fd)
     return -1;
   }
 
-  //else if(new_fd == old_fd)
-  //return old_fd;
+  else if(new_fd == old_fd)
+  return old_fd;
 
   close(new_fd);
   return fcntl(old_fd, F_DUPFD, new_fd);
